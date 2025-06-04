@@ -1,0 +1,21 @@
+Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
+
+cd backend; .\venv\Scripts\Activate; uvicorn main:app --reload
+
+cd frontend; npm run start
+
+
+
+✅ Explication :
+
+Set-ExecutionPolicy RemoteSigned -Scope CurrentUser -Force : permet l'exécution des scripts locaux signés (à faire une seule fois en général).
+
+cd backend : entre dans le dossier backend.
+
+.\venv\Scripts\Activate : active l’environnement virtuel en PowerShell.
+
+uvicorn main:app --reload : démarre le serveur FastAPI.
+
+cd frontend : change le dossier courant vers frontend
+
+npm run start : démarre le serveur React (vite ou react-scripts, selon votre config)
