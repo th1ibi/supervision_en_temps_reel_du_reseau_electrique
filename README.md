@@ -99,3 +99,7 @@
 
 ---
 
+### 🖼️ Architecture de l'application
+
+![Architecture de l'application](./architecture.png)
+
